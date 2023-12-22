@@ -5,6 +5,8 @@ import SignUp from "../pages/SignUp/SignUp"
 import Login from "../pages/Login/Login"
 import PrivateRoute from "./PrivateRoute"
 import Dashboard from "../pages/Dashboard/Dashboard"
+import AboutUs from "../pages/AboutUs/AboutUs"
+import ContactUs from "../pages/ContactUs/ContactUs"
 
 const Router = () => {
   return (
@@ -12,6 +14,8 @@ const Router = () => {
         <Routes>
             <Route path="/" element={<Root/>} >
                 <Route path="/" element={<Home/>} />
+                <Route path="/about" element={<AboutUs/>} />
+                <Route path="/contact" element={<ContactUs/>} />
                 <Route path="/signup" element={<SignUp/>} />
                 <Route path="/login" element={<Login/>} />
                 <Route path="/dashboard" element={<PrivateRoute>

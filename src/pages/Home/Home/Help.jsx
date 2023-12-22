@@ -7,7 +7,7 @@ const Help = () => {
       <div className="container-fluid help-full py-8 border border-indigo-50">
         <div className="container help-wrap mx-auto relative z-10">
           <h2 className="text-center font-bold my-5 text-2xl">How it Helps</h2>
-          <Tabs className="w-[900px] mx-auto">
+          <Tabs className="mx-w-[900px] w-auto mx-auto px-3">
             <TabList>
               <Tab>Professionals</Tab>
               <Tab>IT</Tab>

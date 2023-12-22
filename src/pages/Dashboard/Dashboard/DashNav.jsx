@@ -21,7 +21,7 @@ const DashNav = () => {
   const onSubmit = (data) => {
     const newTask = {...data, status: "todo", email: user?.email};
     
-    axios.post('http://localhost:5000/tasks', newTask)
+    axios.post('https://task-management-server-roan.vercel.app/tasks', newTask)
     .then((data) => {
       if(data.data){
         notify();
@@ -96,7 +96,7 @@ const DashNav = () => {
                   </label>
                   <input
                     className="input input-bordered w-full"
-                    type="text"
+                    type="date"
                     {...register("task_deadline", { required: true })}
                     placeholder="Write Deadline Here"
                   />

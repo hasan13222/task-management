@@ -7,10 +7,10 @@ const NavItems = () => (
       <a href="/">Home</a>
     </li>
     <li>
-      <a>About Us</a>
+      <a href="/about">About Us</a>
     </li>
     <li>
-      <a>Contact Us</a>
+      <a href="/contact">Contact Us</a>
     </li>    
     <li>
       <a href="/dashboard">Dashboard</a>
@@ -51,7 +51,7 @@ const Header = () => {
                 </div>
                 <ul
                   tabIndex={0}
-                  className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                  className="menu menu-sm dropdown-content mt-3 z-[100] p-2 shadow bg-base-100 rounded-box w-52"
                 >
                   <NavItems />
                 </ul>
