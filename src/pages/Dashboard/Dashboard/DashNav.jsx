@@ -32,6 +32,8 @@ const DashNav = () => {
   return (
     <>
       <div className="contaner-fluid dashnav py-7">
+        
+      <ToastContainer/>
         <div className="container dashnav-cont mx-auto">
           <div className="navbar">
             <div className="navbar-start">
@@ -63,7 +65,7 @@ const DashNav = () => {
                 </button>
               </form>
               <form
-                className="flex mx-autojustify-center flex-col gap-2 px-5"
+                className="flex mx-auto justify-center flex-col gap-2 px-5"
                 onSubmit={handleSubmit(onSubmit)}
               >
                 <div className="item flex flex-col gap-1">
@@ -126,7 +128,6 @@ const DashNav = () => {
           </dialog>
         </div>
       </div>
-      <ToastContainer/>
     </>
   );
 };
